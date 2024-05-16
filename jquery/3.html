@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+.box{
+width:100px;
+height:200x;
+border:solid 2px;
+padding:70px;
+}
+</style></head>
+<body>
+<div class="box">
+<h3>Function Mouseover</h3>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E
+=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+$(".box").mouseover(function(){
+$(this).css({"background-color":"pink"})
+})
+$(".box").mouseleave(function(){
+$(this).css({"background-color":"yellow"})
+})
+})
+</script>
+</body>
+</html>

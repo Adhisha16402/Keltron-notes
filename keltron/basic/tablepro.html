@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table project</title>
+    <STYLE>
+         table, th, td{
+            border: 2px solid #fe0000;          
+            padding: 2px;
+            padding-left: 1px;
+            padding-right: 1px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-collapse: collapse;
+           
+        }
+        th{
+            background-color: #008000 ;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+        td{
+            color:#5234ff ;
+            text-align: center;
+        }
+        #tab{
+            background-color: yellow;
+        }
+       #tab th{
+        background-color: yellow;
+        color: #fe0000;
+        }
+        #tab td{
+            background-color: aliceblue;
+        }
+
+       
+    </STYLE>
+</head>
+<body>
+    <table style="width:90%">
+        <tr>
+            <th>
+                Si No
+            </th>
+            <th colspan="2">
+                Name & Address
+            </th>
+           
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                RENJITH
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                SANU
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                3
+            </td>
+            <td>
+                XAVI
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+    </table>
+    <br>
+    <table id="tab" style="width:90%";>
+        <tr>
+            <th>
+                Si No
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Address
+            </th>
+           
+        </tr>
+        <tr>
+            <td rowspan="2">
+                1&2
+            </td>
+            <td>
+                RENJITH
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+        <tr>
+            
+            <td>
+                SANU
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                3
+            </td>
+            <td>
+                XAVI
+            </td>
+            <td>
+                US
+            </td>
+           
+        </tr>
+    </table>
+    
+</body>
+</html>

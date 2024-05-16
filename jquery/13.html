@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(158, 50, 68);
+            margin:auto;
+            box-shadow: 1px 1px 1px;
+            padding:200px;
+        }
+        .show{
+            background-color: green;
+            padding: 10px;
+            border: 1px solid;
+
+        }
+        .hide{
+            background-color:green;
+            padding: 10px;
+            border: 1px solid;
+        }
+        .ssp{
+            background-color: red;
+            padding: 40px;
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="hide">Hide</button>
+        <button class="show">Show</button>
+        <p class="ssp">This is a paragraph</p>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E
+        =" crossorigin="anonymous"></script>
+        <script>
+        $(document).ready(function(){
+        $(".show").click(function(){
+        $(".ssp").show("slow")
+        })
+        $(".hide").click(function(){
+        
+        $(".ssp").hide("fast")
+        })
+        })
+        </script>
+    
+</body>
+</html>

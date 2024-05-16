@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .full-overlay {
+            display: none;
+            position: fixed;
+            top: 10px;
+            padding: 100px;
+            width: 50%;
+            height: 20%;
+            background-color: rgba(240, 149, 149, 0.6);
+        }
+
+        .content {
+            margin: 50px;
+        }
+
+        .closebtn {
+            position: relative;
+            float: right;
+            font-size: 20px;
+            text-decoration: underline;
+            color: rgb(185, 55, 55);
+        }
+
+        .click-overlay {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        Enter your name : <a class="click-overlay">click here</a>
+    </div>
+    <div class="full-overlay">
+        <a class="closebtn">close</a>
+        Enter your name :
+        <input type="text" name="name">
+        <input type="button" name="submit" value="submit">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E
+=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.click-overlay').click(function () {
+                $('.full-overlay').fadeIn()
+                $('.content').hide()
+            })
+            $('.closebtn').click(function () {
+                $('.full-overlay').fadeOut()
+            })
+        })
+    </script>
+</body>
+
+</html>

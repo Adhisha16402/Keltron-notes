@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="press">change style</button>
+<h1>css property</h1>
+<p>paragraph</p>
+<script src="https://code.jquery.com/jquery-3.6.4.js"
+integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E
+=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+$("#press").click(function(){
+$("h1").css({"color":"red"})
+$("p").css({"color":"green"})
+})
+})
+</script>
+</body>
+</html>
